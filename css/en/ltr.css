@@ -646,7 +646,10 @@ Browse Category Section
     position: relative;
     z-index: 0;
 }
-#browseCategory .category-slider .c-item {
+#browseCategory .category-slider .slick-list {
+    padding-bottom: 80px;
+}
+#browseCategory .category-slider .slick-list .c-item {
     width: 100%;
     height: auto;
     margin: 0 15px;
@@ -655,17 +658,17 @@ Browse Category Section
     border: 1px solid #f2f2f2;
     border-radius: 5px;
 }
-#browseCategory .category-slider .c-item .image {
+#browseCategory .category-slider .slick-list .c-item .image {
     width: 100%;
     height: 90px;
     margin: 20px auto;
 }
-#browseCategory .category-slider .c-item .image img {
+#browseCategory .category-slider .slick-list .c-item .image img {
     width: auto;
     height: auto;
     margin: 0 auto;
 }
-#browseCategory .category-slider .c-item .text h5 a {
+#browseCategory .category-slider .slick-list .c-item .text h5 a {
     font-size: 18px;
     text-decoration: none;
     font-weight: 600;
@@ -673,7 +676,7 @@ Browse Category Section
     text-transform: capitalize;
     transition: all ease-in-out 500ms;
 }
-#browseCategory .category-slider .c-item .text h5 a:hover {
+#browseCategory .category-slider .slick-list .c-item .text h5 a:hover {
     color: #F2A97E;
     transition: all ease-in-out 500ms;
 }
@@ -681,7 +684,7 @@ Browse Category Section
     background-color: #F2A97E;
     box-shadow: none;
     position: absolute;
-    bottom: -80px;
+    bottom: 0;
     z-index: 999;
     transition: all ease-in-out 500ms;
 }
@@ -704,4 +707,357 @@ Browse Category Section
 #browseCategory .category-slider .slick-arrow:hover i {
     color: #f2f2f2;
     ransition: all ease-in-out 500ms;
+}
+
+/*
+Popular Trips Section
+*/
+#popularTrips {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #F4F6F8;
+}
+#popularTrips .heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+#popularTrips .heading span {
+    position: relative;
+    z-index: 0;
+}
+#popularTrips .heading span::before {
+    content: "";
+    width: 70px;
+    height: 10px;
+    border-top: 1px solid #F2A97E;
+    border-bottom: 1px solid #F2A97E;
+    position: absolute;
+    left: -90px;
+    top: 10px;
+    z-index: 1;
+}
+#popularTrips .heading span::after {
+    content: "";
+    width: 70px;
+    height: 10px;
+    border-top: 1px solid #F2A97E;
+    border-bottom: 1px solid #F2A97E;
+    position: absolute;
+    right: -90px;
+    top: 10px;
+    z-index: 1;
+}
+#popularTrips .heading span img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+#popularTrips .heading h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #204C73;
+    margin-top: 30px;
+}
+#popularTrips .popular-trip-slider .slick-list {
+    padding-bottom: 80px;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item {
+    width: 100%;
+    height: auto;
+    margin: 0 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .trip-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .trip-image img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .duration {
+    width: auto;
+    height: auto;
+    background-color: #55C1D9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 10;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .duration p {
+    color: #f2f2f2;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .favorite {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .favorite .like:not(:checked) input {
+    position:absolute;
+    top:-9999px;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .favorite .like:not(:checked) label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:25px;
+    color:#f2f2f2;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .favorite .like:not(:checked) label:before {
+    content: '\ef44';
+    font-family: IcoFont!important;
+    font-style: normal;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .favorite .like input:checked ~ label {
+    color: #ff2300;    
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .favorite .like:not(:checked) label:hover,
+#popularTrips .popular-trip-slider .slick-list .p-item .favorite .like:not(:checked) label:hover ~ label {
+    color: #ff2300;  
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .company-profile {
+    position: absolute;
+    left: 15px;
+    top: 47%;
+    z-index: 10;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .company-profile img {
+    width: 70px;
+    height: auto;
+    margin: 0 auto;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .categories {
+    margin: 30px 0 5px 0;
+    padding: 0 15px;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .categories ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .categories ul li {
+    display: inline-block;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .categories ul li::after {
+    content: ",";
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .categories ul li:last-child::after {
+    content: "";
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .categories ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #204C73;
+    opacity: 0.50;
+    text-transform: capitalize;
+    transition: all ease-in-out 500ms;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .categories ul li a:hover {
+    color: #F2A97E;
+    opacity: 1;
+    transition: all ease-in-out 500ms;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .title {
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .title h5 a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #204C73;
+    font-weight: 600;
+    transition: all ease-in-out 500ms;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .title h5 a:hover {
+    color: #F2A97E;
+    transition: all ease-in-out 500ms;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .rate {
+    float: left;
+    padding: 5px 15px;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .rate span i {
+    font-size: 20px;
+    color: #ccc;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .rate span.active i {
+    color: #F2A97E;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .price {
+    float: right;
+    padding: 0 15px;
+}
+#popularTrips .popular-trip-slider .slick-list .p-item .price h4 {
+    font-weight: 600;
+    color: #55C1D9;
+}
+#popularTrips .popular-trip-slider .slick-arrow {
+    background-color: #F2A97E;
+    box-shadow: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    transition: all ease-in-out 500ms;
+}
+#popularTrips .popular-trip-slider .slick-arrow.btn-prev {
+    left: 51%;
+}
+#popularTrips .popular-trip-slider .slick-arrow.btn-next {
+    right: 51%;
+}
+#popularTrips .popular-trip-slider .slick-arrow i {
+    font-size: 25px;
+    color: #204C73;
+    line-height: 30px;
+    transition: all ease-in-out 500ms;
+}
+#popularTrips .popular-trip-slider .slick-arrow:hover {
+    background-color: #55C1D9;
+    transition: all ease-in-out 500ms;
+}
+#popularTrips .popular-trip-slider .slick-arrow:hover i {
+    color: #f2f2f2;
+    ransition: all ease-in-out 500ms;
+}
+
+/*
+Footer
+*/
+#footer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 0 0;
+    background-color: #204C73;
+}
+#footer .f-heading {
+    margin-bottom: 45px;
+}
+#footer .f-heading h5 {
+    font-weight: 600;
+    color: #f2f2f2;
+    text-transform: capitalize;
+    position: relative;
+}
+#footer .f-heading h5::after {
+    content: "";
+    width: 75px;
+    height: 2px;
+    background-color: #F2A97E;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    z-index: 1;
+}
+#footer .f-block {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#footer .f-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .f-block ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+#footer .f-block ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #f2f2f2;
+    transition: all ease-in-out 500ms;
+}
+#footer .f-block ul li a:hover {
+    color: #F2A97E;
+    transition: all ease-in-out 500ms;
+}
+#footer .f-block ul li span {
+    color: #f2f2f2;
+}
+#footer .f-block ul li span:first-child {
+    color: #F2A97E;
+}
+#footer .social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+#footer .social ul li a i {
+    width: 40px;
+    height: 40px;
+    background-color: #55C1D9;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all ease-in-out 500ms;
+}
+#footer .social ul li a:hover {
+    transition: all ease-in-out 500ms;
+    color: #204C73;
+}
+#footer .social ul li a:hover i {
+    transition: all ease-in-out 500ms;
+    background-color: #F2A97E;
+}
+#footer .copyrights {
+    margin-top: 60px;
+    border-top: 1px solid #f2f2f23d;
+    padding: 15px 0;
+    overflow: hidden;
+}
+#footer .copyrights .rights {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+#footer .copyrights .rights p {
+    font-size: 14px;
+    color: #f2f2f2;
+    text-transform: capitalize;
+    text-align: left;
+}
+#footer .copyrights .rights p a {
+    text-decoration: none;
+    color: #F2A97E;
+    transition: all ease-in-out 500ms;
+}
+#footer .copyrights .rights p a:hover {
+    transition: all ease-in-out 500ms;
+    color: #55C1D9;
+}
+#footer .copyrights .powered {
+    float: right;
+    width: 50%;
+    height: auto;
+}
+#footer .copyrights .powered p {
+    font-size: 14px;
+    color: #f2f2f2;
+    text-transform: capitalize;
+    text-align: right;
+}
+#footer .copyrights .powered p a {
+    text-decoration: none;
+    color: #F2A97E;
+    transition: all ease-in-out 500ms;
+}
+#footer .copyrights .powered p a:hover {
+    transition: all ease-in-out 500ms;
+    color: #55C1D9;
 }
