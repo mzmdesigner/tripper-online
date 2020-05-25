@@ -1,0 +1,51 @@
+/* 
+Import Font URl
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+/* 
+General Style Layout
+*/
+html, body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    font-weight: 400;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 36px;
+}
+h4 {
+    font-size: 30px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 18px;
+}
+p {
+    font-size: 16px;
+}
+a:focus, .btn, .btn:focus {
+    outline: 0;
+    border: 0;
+}
+.form-control {
+    border: 0;
+    border-radius: 0;
+}
+.form-control:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: 0;
+}
