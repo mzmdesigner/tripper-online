@@ -1435,3 +1435,153 @@ Category & Search Page
     background-color: #F2A97E;
     color: #204C73;
 }
+
+/*
+Login Page
+*/
+#loginPage {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#loginPage .login-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #F4F6F8;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    -o-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+#loginPage .login-wrapper h3 {
+    font-weight: 600;
+    color: #204C73;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#loginPage .login-wrapper form .form-group {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#loginPage .login-wrapper form .form-group label {
+    font-weight: 600;
+    color: #F2A97E;
+    text-transform: capitalize;
+}
+#loginPage .login-wrapper form .form-group .form-control {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #204C73;
+    text-transform: capitalize;
+}
+#loginPage .login-wrapper form .form-group span {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    color: #204C73;
+    opacity: 0.5;
+}
+#loginPage .login-wrapper form .form-group .btn-login {
+    width: auto;
+    min-width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: 600;
+    background-color: #55C1D9;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    transition: all ease-in-out 500ms;
+}
+#loginPage .login-wrapper form .form-group .btn-login:hover {
+   transition: all ease-in-out 500ms;
+   color: #204C73;
+   background-color: #F2A97E;
+}
+#loginPage .login-wrapper form .form-group p {
+    float: right;
+    margin-top: 30px;
+}
+#loginPage .login-wrapper form .form-group p a {
+    text-decoration: none;
+    color: #F2A97E;
+    text-transform: capitalize;
+    transition: all ease-in-out 500ms;
+}
+#loginPage .login-wrapper form .form-group p a:hover {
+    transition: all ease-in-out 500ms;
+    color: #204C73;
+}
+#loginPage .login-wrapper .social {
+    margin-top: 30px;
+}
+#loginPage .login-wrapper .social h5 {
+    text-align: center;
+    font-weight: 600;
+    color: #204C73;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+#loginPage .login-wrapper .social ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#loginPage .login-wrapper .social ul li {
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+}
+#loginPage .login-wrapper .social ul li.facebook {
+    background-color: #395899;
+    border-radius: 5px;
+}
+#loginPage .login-wrapper .social ul li.twitter {
+    background-color: #03A9F4;
+    border-radius: 5px;
+}
+#loginPage .login-wrapper .social ul li.google {
+    background-color: #F34A38;
+    border-radius: 5px;
+}
+#loginPage .login-wrapper .social ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 30px 15px;
+    line-height: 40px;
+    font-weight: 600;
+}
+#loginPage .login-wrapper .social ul li a i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+#loginPage .login-wrapper .text {
+    margin-top: 10px;
+    text-align: center;
+}
+#loginPage .login-wrapper .text p {
+    color: #204C73;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#loginPage .login-wrapper .text p a {
+    text-decoration: none;
+    color: #F2A97E;
+    transition: all ease-in-out 500ms;
+}
+#loginPage .login-wrapper .text p a:hover {
+    color: #204C73;
+    transition: all ease-in-out 500ms;
+}
