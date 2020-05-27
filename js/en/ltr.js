@@ -45,4 +45,52 @@ jQuery(document).ready(function($){
         $( "#datepicker2" ).datepicker();
     });
 
+    // Show More & Show Less Categories » Category Page & Search Page
+    if ($('.cat-list').length > 5) {
+        $('.cat-list:gt(3)').hide();
+        $('.show-more-cat').show();
+    }
+    $('.show-more-cat').on('click', function() {
+        //toggle elements with class .cat-list that their index is bigger than 3
+        $('.cat-list:gt(3)').toggle();
+        //change text of show more element just for demonstration purposes to this demo
+        $(this).text() === '+ Show More' ? $(this).text('- Show less') : $(this).text('+ Show More');
+    });
+
+    // Price Range Slider Control
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 100,
+        to: 500,
+        grid: true,
+        prefix: "$",
+        skin: "flat",
+    });
+
+    // Show More & Show Less Country » Category Page & Search Page
+    if ($('.country-list').length > 5) {
+        $('.country-list:gt(3)').hide();
+        $('.show-more-country').show();
+    }
+    $('.show-more-country').on('click', function() {
+        //toggle elements with class .country-list that their index is bigger than 3
+        $('.country-list:gt(3)').toggle();
+        //change text of show more element just for demonstration purposes to this demo
+        $(this).text() === '+ Show More' ? $(this).text('- Show less') : $(this).text('+ Show More');
+    });
+
+    // Show More & Show Less City » Category Page & Search Page
+    if ($('.city-list').length > 5) {
+        $('.city-list:gt(3)').hide();
+        $('.show-more-city').show();
+    }
+    $('.show-more-city').on('click', function() {
+        //toggle elements with class .city-list that their index is bigger than 3
+        $('.city-list:gt(3)').toggle();
+        //change text of show more element just for demonstration purposes to this demo
+        $(this).text() === '+ Show More' ? $(this).text('- Show less') : $(this).text('+ Show More');
+    });
+
 });
