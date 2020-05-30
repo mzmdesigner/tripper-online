@@ -93,4 +93,38 @@ jQuery(document).ready(function($){
         $(this).text() === '+ Show More' ? $(this).text('- Show less') : $(this).text('+ Show More');
     });
 
+    // Trip Slider Settings » Trip Details Page
+    $('.trip-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        arrows: true,
+        prevArrow:"<button class='btn btn-primary btn-prev'><i class='icofont-long-arrow-right'></i></button>",
+        nextArrow:"<button class='btn btn-primary btn-next'><i class='icofont-long-arrow-left'></i></button>",
+    });
+
+    // Datepicker From » Trip Details
+    $(function() {
+        $( "#datepicker3" ).datepicker();
+    });
+
+    // Datepicker To » Trip Details
+    $(function() {
+        $( "#datepicker4" ).datepicker();
+    });
+
+    // Reviews Slider Settings » Trip Details Page
+    $('.reviews-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        arrows: true,
+        prevArrow:"<button class='btn btn-primary btn-prev'><i class='icofont-long-arrow-right'></i></button>",
+        nextArrow:"<button class='btn btn-primary btn-next'><i class='icofont-long-arrow-left'></i></button>",
+    });
+
 });
